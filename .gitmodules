@@ -1,3 +1,6 @@
 [submodule "kolakoskiTests"]
 	path = kolakoskiTests
 	url = https://github.com/JaroslawWiosna/kolakoskiTests.git
+[submodule "kolakoskiSequences"]
+	path = kolakoskiSequences
+	url = https://github.com/JaroslawWiosna/kolakoskiSequences.git
