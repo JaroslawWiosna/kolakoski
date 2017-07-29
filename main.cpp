@@ -63,5 +63,26 @@ int main(int argc, char *argv[]) {
         throw;
     }
 
+////////////////////////////////////////
+
+    std::string filenameBin{"../kolakoskiSequences/kolakoski-BIN-"};
+    filenameBin += ss.str(); // length
+    filenameBin += ".txt";
+
+    std::size_t tmp{}, n{};
+    std::ofstream ostrmBin(filenameBin, std::ofstream::binary | std::ofstream::out);
+    if (ostrmBin) {
+        for (const auto& i : vec) {
+            if (i == 1) {
+                ostrmBin << 0;
+            } else if (i == 2) {
+                ostrmBin << 1;
+            } else {
+                throw;
+            }
+        }
+    } else {
+        throw;
+    }
     return 0;
 }
