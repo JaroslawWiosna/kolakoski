@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <bitset>
 
 std::vector<std::size_t> kolakoski(std::size_t size) {
     std::vector<std::size_t> vec;
@@ -67,18 +68,24 @@ int main(int argc, char *argv[]) {
 
     std::string filenameBin{"../kolakoskiSequences/kolakoski-BIN-"};
     filenameBin += ss.str(); // length
-    filenameBin += ".txt";
 
-    std::size_t tmp{}, n{};
+    std::bitset<8> byte{};
+    int n{};
     std::ofstream ostrmBin(filenameBin, std::ofstream::binary | std::ofstream::out);
     if (ostrmBin) {
         for (const auto& i : vec) {
             if (i == 1) {
-                ostrmBin << 0;
+                byte.set(7-n,0);
             } else if (i == 2) {
-                ostrmBin << 1;
+                byte.set(7-n,1);
             } else {
                 throw;
+            }
+            n++;
+            if (n==8) {
+                ostrmBin << byte;
+                n=0;
+                byte.set();
             }
         }
     } else {
