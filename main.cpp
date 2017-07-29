@@ -37,7 +37,7 @@ int main() {
     }
     std::cout << "\b\b  " << std::endl;
 
-    std::string filename{"../kolakoski-100.txt"};
+    std::string filename{"../kolakoskiSequences/kolakoski-100.txt"};
     std::ofstream ostrm(filename);
     if (ostrm) {
         for (const auto& i : vec) {
