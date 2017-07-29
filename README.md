@@ -9,6 +9,7 @@
     - [What is it?](#what-is-it)
     - [How to generate it?](#how-to-generate-it)
   - [With the sequence of length n as input, how long would be the output sequence?](#with-the-sequence-of-length-n-as-input-how-long-would-be-the-output-sequence)
+  - [Why can't we start from `2`?](#why-cant-we-start-from-2)
   - [To-Do-List](#to-do-list)
 
 ---
@@ -80,7 +81,22 @@ In fact we could tell what is the fourth element: `{1,2}` means that the change 
 | `6`       | `10`       |
 
 The answer is: **You have to sum up all elements and add one**.
-What is the percentage increase?
+
+Additional question: *What is the percentage increase?*
+
+---
+
+## Why can't we start from `2`?
+
+In fact **we can**.
+The outcome would be:
+
+> `{2, 2, 1, 1, 2, 1, 2, 2, 1, ...}`
+
+It looks like the regular sequence without the first element. 
+
+...but how can we be sure? Is there a [mathematical proof](https://en.wikipedia.org/wiki/Mathematical_proof)?
+
 
 ---
 
