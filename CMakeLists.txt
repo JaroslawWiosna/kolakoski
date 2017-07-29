@@ -40,6 +40,10 @@ add_executable(kolakoski main.cpp ${files})
 include_directories(${GTEST_INCLUDE_DIRS})
 target_link_libraries(kolakoski gtest pthread)
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+  target_link_libraries(kolakoski gtest pthread "-L /usr/local/lib")
+endif()
+
 enable_testing()
 find_package(Gtest)
 
