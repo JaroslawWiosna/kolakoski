@@ -1,0 +1,3 @@
+[submodule "kolakoskiTests"]
+	path = kolakoskiTests
+	url = https://github.com/JaroslawWiosna/kolakoskiTests.git
