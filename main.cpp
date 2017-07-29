@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <string>
+#include <fstream>
 
 std::vector<std::size_t> kolakoski(std::size_t size) {
     std::vector<std::size_t> vec;
@@ -33,6 +35,18 @@ int main() {
     for (const auto& i : vec) {
         std::cout << i << ", ";
     }
-    std::cout << std::endl;
+    std::cout << "\b\b  " << std::endl;
+
+    std::string filename{"../kolakoski-100.txt"};
+    std::ofstream ostrm(filename);
+    if (ostrm) {
+        for (const auto& i : vec) {
+            ostrm << i << ", ";
+        }
+        ostrm << "\b\b  " << std::endl;
+    } else {
+        throw;
+    }
+
     return 0;
 }
