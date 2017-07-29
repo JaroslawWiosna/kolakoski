@@ -8,6 +8,7 @@
   - [Overview](#overview)
     - [What is it?](#what-is-it)
     - [How to generate it?](#how-to-generate-it)
+  - [With the sequence of length n as input, how long would be the output sequence?](#with-the-sequence-of-length-n-as-input-how-long-would-be-the-output-sequence)
   - [To-Do-List](#to-do-list)
 
 ---
@@ -67,6 +68,22 @@ In fact we could tell what is the fourth element: `{1,2}` means that the change 
 
 ---
 
+## With the sequence of length n as input, how long would be the output sequence?
+
+| input seq | output seq |
+|-----------|------------|
+| `1`       | `2`        |
+| `2`       | `4`        |
+| `3`       | `6`        |
+| `4`       | `7`        |
+| `5`       | `8`        |
+| `6`       | `10`       |
+
+The answer is: **You have to sum up all elements and add one**.
+What is the percentage increase?
+
+---
+
 ### TO-DO LIST
 
 - [x] ~~Sequence of size 100 is generated correctly~~ <-- not relevant from v.0.2.0
@@ -75,5 +92,6 @@ In fact we could tell what is the fourth element: `{1,2}` means that the change 
 - [x] Enable Travis CI
 - [ ] Clang support 
 - [ ] Generate binary file 
+- [ ] Compute (calculate) what is the percentage increase of output sequence with sequence of size `x` as input?
 
 ---
