@@ -30,7 +30,10 @@ endif()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILE_FLAGS}" )
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINK_EXECUTABLE} ${LINK_FLAGS}" )
 
-include_directories( )
+include_directories(
+leapfrogging
+)
+
 set(files
 )
 
