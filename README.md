@@ -5,12 +5,21 @@
 
 > [Kolakoski sequence](https://en.wikipedia.org/wiki/Kolakoski_sequence) generator
 
+  - [Numberphile video](#numberphile-video)
   - [Overview](#overview)
     - [What is it?](#what-is-it)
     - [How to generate it?](#how-to-generate-it)
   - [With the sequence of length n as input, how long would be the output sequence?](#with-the-sequence-of-length-n-as-input-how-long-would-be-the-output-sequence)
   - [Why can't we start from `2`?](#why-cant-we-start-from-2)
   - [To-Do-List](#to-do-list)
+
+
+---
+
+## Numberphile video
+
+[![numberphile-video](https://img.youtube.com/vi/co5sOgZ3XcM/0.jpg)](https://www.youtube.com/watch?v=co5sOgZ3XcM)
+
 
 ---
 
