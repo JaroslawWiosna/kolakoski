@@ -14,29 +14,6 @@
 #include <vector>
 
 std::vector<std::size_t> kolakoskiLeapfrogging
-    (std::vector<std::size_t> input = {1}) {
-  std::size_t sumOfElemInputSeq{};
-  for (const auto& i : input) {
-    sumOfElemInputSeq += i;
-  }
-  std::vector<std::size_t> output;
-  output.reserve(sumOfElemInputSeq + 1);
-  output.emplace_back(1);
-
-  std::size_t j{1};
-  std::size_t pos{};
-  for (const auto& i : input) {
-    pos += i;
-    while (j++ != pos) {
-      output.emplace_back(output.back());
-    }
-      if (output.back() == 1){
-        output.emplace_back(2); //change (toggle)
-      } else {
-        output.emplace_back(1); //change (toggle)
-      }
-  }
-  return output;
-}
+    (std::vector<std::size_t> input = {1});
 
 #endif // LEAPFROGGING_HPP
