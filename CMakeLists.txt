@@ -35,13 +35,11 @@ set(files
 )
 
 project (kolakoski)
-find_package(Gtest)
 add_executable(kolakoski main.cpp ${files}) 
 include_directories(${GTEST_INCLUDE_DIRS})
 target_link_libraries(kolakoski gtest pthread)
 
 enable_testing()
-find_package(Gtest)
 
 if(BUILD_TESTS)
   add_subdirectory(kolakoskiTests)
